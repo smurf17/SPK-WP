@@ -1,0 +1,155 @@
+@startuml
+annotation java.lang.Override
+annotation java.lang.SuppressWarnings
+class com.mysql.jdbc.Connection
+class java.awt.Color
+class java.awt.Cursor
+class java.awt.event.KeyEvent
+class java.io.File
+class java.sql.Connection
+class java.sql.DriverManager
+class java.sql.PreparedStatement
+class java.sql.ResultSet
+class java.sql.SQLException
+class java.sql.Statement
+class java.text.DecimalFormat
+class java.util.ArrayList
+class java.util.HashMap
+class java.util.logging.Level
+class java.util.logging.Logger
+class javax.swing.JDialog
+class javax.swing.JFrame
+class javax.swing.JOptionPane
+class javax.swing.JPanel
+class javax.swing.JRootPane
+class javax.swing.table.DefaultTableModel
+class koneksi.Koneksi
+class loginadmin.Login
+class loginadmin.Register
+class menuutama.DataCalonPelamar
+class menuutama.DialogPerhitunganAHP
+class menuutama.DialogTambahData
+class menuutama.KriteriaAhp
+class menuutama.MenuUtama
+class menuutama.PengaturanKriteria
+class menuutama.PengaturanSubKriteria
+class menuutama.Seleksi
+class menuutama.SubKriteriaAhp
+class net.sf.jasperreports.engine.JasperFillManager
+class net.sf.jasperreports.engine.JasperPrint
+class net.sf.jasperreports.engine.JasperReport
+class net.sf.jasperreports.engine.util.JRLoader
+class net.sf.jasperreports.view.JasperViewer
+koneksi.Koneksi ..> java.sql.Connection
+koneksi.Koneksi ..> java.sql.DriverManager
+koneksi.Koneksi ..> java.sql.SQLException
+loginadmin.Login ..> java.lang.SuppressWarnings
+loginadmin.Login ..> java.awt.event.KeyEvent
+loginadmin.Login ..> java.sql.Connection
+loginadmin.Login ..> java.sql.ResultSet
+loginadmin.Login ..> java.sql.SQLException
+loginadmin.Login ..> java.sql.Statement
+loginadmin.Login ..> java.util.logging.Level
+loginadmin.Login ..> java.util.logging.Logger
+loginadmin.Login --|> javax.swing.JFrame
+loginadmin.Login ..> javax.swing.JOptionPane
+loginadmin.Login ..> koneksi.Koneksi
+loginadmin.Login ..> menuutama.MenuUtama
+loginadmin.Register ..> java.lang.SuppressWarnings
+loginadmin.Register ..> java.awt.event.KeyEvent
+loginadmin.Register ..> java.util.logging.Level
+loginadmin.Register ..> java.util.logging.Logger
+loginadmin.Register --|> javax.swing.JFrame
+loginadmin.Register ..> javax.swing.JOptionPane
+loginadmin.Register ..> koneksi.Koneksi
+loginadmin.Register ..> menuutama.MenuUtama
+menuutama.DataCalonPelamar ..> java.lang.SuppressWarnings
+menuutama.DataCalonPelamar ..> java.awt.Color
+menuutama.DataCalonPelamar ..> java.sql.Connection
+menuutama.DataCalonPelamar ..> java.sql.PreparedStatement
+menuutama.DataCalonPelamar ..> java.sql.ResultSet
+menuutama.DataCalonPelamar ..> java.sql.SQLException
+menuutama.DataCalonPelamar ..> javax.swing.JOptionPane
+menuutama.DataCalonPelamar --|> javax.swing.JPanel
+menuutama.DataCalonPelamar ..> javax.swing.table.DefaultTableModel
+menuutama.DataCalonPelamar ..> koneksi.Koneksi
+menuutama.DialogPerhitunganAHP ..> java.lang.Override
+menuutama.DialogPerhitunganAHP ..> java.lang.SuppressWarnings
+menuutama.DialogPerhitunganAHP ..> java.awt.Color
+menuutama.DialogPerhitunganAHP ..> java.awt.Cursor
+menuutama.DialogPerhitunganAHP ..> java.sql.Connection
+menuutama.DialogPerhitunganAHP ..> java.sql.PreparedStatement
+menuutama.DialogPerhitunganAHP ..> java.sql.ResultSet
+menuutama.DialogPerhitunganAHP ..> java.sql.SQLException
+menuutama.DialogPerhitunganAHP ..> java.text.DecimalFormat
+menuutama.DialogPerhitunganAHP ..> java.util.ArrayList
+menuutama.DialogPerhitunganAHP ..> java.util.logging.Level
+menuutama.DialogPerhitunganAHP ..> java.util.logging.Logger
+menuutama.DialogPerhitunganAHP --|> javax.swing.JDialog
+menuutama.DialogPerhitunganAHP ..> javax.swing.JOptionPane
+menuutama.DialogPerhitunganAHP ..> javax.swing.JRootPane
+menuutama.DialogPerhitunganAHP ..> javax.swing.table.DefaultTableModel
+menuutama.DialogPerhitunganAHP ..> koneksi.Koneksi
+menuutama.DialogTambahData ..> java.lang.Override
+menuutama.DialogTambahData ..> java.lang.SuppressWarnings
+menuutama.DialogTambahData ..> java.awt.Color
+menuutama.DialogTambahData ..> java.awt.Cursor
+menuutama.DialogTambahData ..> java.sql.Connection
+menuutama.DialogTambahData ..> java.sql.PreparedStatement
+menuutama.DialogTambahData ..> java.sql.ResultSet
+menuutama.DialogTambahData ..> java.sql.SQLException
+menuutama.DialogTambahData ..> java.util.logging.Level
+menuutama.DialogTambahData ..> java.util.logging.Logger
+menuutama.DialogTambahData --|> javax.swing.JDialog
+menuutama.DialogTambahData ..> javax.swing.JOptionPane
+menuutama.DialogTambahData ..> javax.swing.JRootPane
+menuutama.DialogTambahData ..> javax.swing.table.DefaultTableModel
+menuutama.DialogTambahData ..> koneksi.Koneksi
+menuutama.KriteriaAhp ..> java.text.DecimalFormat
+menuutama.MenuUtama ..> java.lang.SuppressWarnings
+menuutama.MenuUtama ..> com.mysql.jdbc.Connection
+menuutama.MenuUtama ..> java.awt.Color
+menuutama.MenuUtama ..> java.awt.Cursor
+menuutama.MenuUtama ..> java.io.File
+menuutama.MenuUtama ..> java.util.HashMap
+menuutama.MenuUtama --|> javax.swing.JFrame
+menuutama.MenuUtama ..> javax.swing.JOptionPane
+menuutama.MenuUtama ..> javax.swing.JPanel
+menuutama.MenuUtama ..> koneksi.Koneksi
+menuutama.MenuUtama ..> loginadmin.Login
+menuutama.MenuUtama ..> net.sf.jasperreports.engine.JasperFillManager
+menuutama.MenuUtama ..> net.sf.jasperreports.engine.JasperPrint
+menuutama.MenuUtama ..> net.sf.jasperreports.engine.JasperReport
+menuutama.MenuUtama ..> net.sf.jasperreports.engine.util.JRLoader
+menuutama.MenuUtama ..> net.sf.jasperreports.view.JasperViewer
+menuutama.PengaturanKriteria ..> java.lang.SuppressWarnings
+menuutama.PengaturanKriteria ..> java.sql.Connection
+menuutama.PengaturanKriteria ..> java.sql.PreparedStatement
+menuutama.PengaturanKriteria ..> java.sql.ResultSet
+menuutama.PengaturanKriteria ..> java.sql.SQLException
+menuutama.PengaturanKriteria ..> javax.swing.JOptionPane
+menuutama.PengaturanKriteria --|> javax.swing.JPanel
+menuutama.PengaturanKriteria ..> javax.swing.table.DefaultTableModel
+menuutama.PengaturanKriteria ..> koneksi.Koneksi
+menuutama.PengaturanSubKriteria ..> java.lang.SuppressWarnings
+menuutama.PengaturanSubKriteria ..> java.sql.Connection
+menuutama.PengaturanSubKriteria ..> java.sql.PreparedStatement
+menuutama.PengaturanSubKriteria ..> java.sql.ResultSet
+menuutama.PengaturanSubKriteria ..> java.sql.SQLException
+menuutama.PengaturanSubKriteria ..> javax.swing.JOptionPane
+menuutama.PengaturanSubKriteria --|> javax.swing.JPanel
+menuutama.PengaturanSubKriteria ..> javax.swing.table.DefaultTableModel
+menuutama.PengaturanSubKriteria ..> koneksi.Koneksi
+menuutama.Seleksi ..> java.lang.SuppressWarnings
+menuutama.Seleksi ..> java.sql.Connection
+menuutama.Seleksi ..> java.sql.PreparedStatement
+menuutama.Seleksi ..> java.sql.ResultSet
+menuutama.Seleksi ..> java.sql.SQLException
+menuutama.Seleksi ..> java.util.ArrayList
+menuutama.Seleksi ..> javax.swing.JOptionPane
+menuutama.Seleksi --|> javax.swing.JPanel
+menuutama.Seleksi ..> javax.swing.table.DefaultTableModel
+menuutama.Seleksi ..> koneksi.Koneksi
+menuutama.SubKriteriaAhp ..> java.text.DecimalFormat
+menuutama.SubKriteriaAhp ..> java.util.ArrayList
+@enduml

@@ -275,7 +275,7 @@ public class Penilaian extends javax.swing.JPanel {
             stat.setString(7, txtC3.getText());
             stat.setString(8, txtC4.getText());
             stat.executeUpdate();                
-            JOptionPane.showMessageDialog(null, "DATA Berhasil Disimpan");
+            JOptionPane.showMessageDialog(null, "Data Berhasil ditambahkan");
             kosong();
             dataTabelPenilaian();
         }catch(SQLException e){
@@ -396,15 +396,7 @@ public class Penilaian extends javax.swing.JPanel {
 
         jLabel2.setText("No. HP");
 
-        txtKode.setEditable(false);
-
-        txtNama.setEditable(false);
-
-        txtHp.setEditable(false);
-
         jLabel4.setText("Divisi Dituju");
-
-        txtDivisi.setEditable(false);
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -943,8 +935,8 @@ public class Penilaian extends javax.swing.JPanel {
 
     private void btnTambahMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnTambahMouseClicked
         // TODO add your handling code here:
-        kosong();
         insertDataPenilaian();
+        kosong();
     }//GEN-LAST:event_btnTambahMouseClicked
 
     private void btnEditMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnEditMouseClicked

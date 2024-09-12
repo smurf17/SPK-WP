@@ -268,19 +268,10 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txtKode">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txtNama">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txtHp">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel4">
               <Properties>
@@ -288,9 +279,6 @@
               </Properties>
             </Component>
             <Component class="javax.swing.JTextField" name="txtDivisi">
-              <Properties>
-                <Property name="editable" type="boolean" value="false"/>
-              </Properties>
             </Component>
           </SubComponents>
         </Container>

@@ -45,7 +45,7 @@ public class DialogAdmin extends javax.swing.JDialog {
             ResultSet rs = stat.executeQuery(query);
             
             while (rs.next()) {
-                String nama = rs.getString("nama");
+                String nama = rs.getString("namalengkap");
                 String user = rs.getString("user");
                 String password = rs.getString("password");
                 tNama.setText(nama);

@@ -1,6 +1,6 @@
 # SPK-WP (Sistem Pendukung Keputusan - Weighted Product)
 
-SPK-WP adalah aplikasi web berbasis PHP yang mengimplementasikan metode **Weighted Product (WP)** untuk sistem pendukung keputusan. Aplikasi ini dikembangkan untuk membantu pemilihan alternatif terbaik berdasarkan sejumlah kriteria dan bobot yang ditentukan.
+SPK-WP adalah aplikasi desktop berbasis Java yang mengimplementasikan metode **Weighted Product (WP)** untuk sistem pendukung keputusan. Aplikasi ini dikembangkan untuk membantu pemilihan alternatif terbaik berdasarkan sejumlah kriteria dan bobot yang ditentukan.
 
 ---
 
@@ -8,7 +8,7 @@ SPK-WP adalah aplikasi web berbasis PHP yang mengimplementasikan metode **Weight
 
 ```
 /
-├─ assets/       # Berkas CSS, JavaScript, gambar
+├─ assets/       # Berkas gambar
 ├─ config/       # Pengaturan koneksi database
 ├─ misc/         # File utilitas atau library tambahan
 ├─ page/         # Halaman web (form, tabel, dsb.)
@@ -67,19 +67,11 @@ SPK-WP adalah aplikasi web berbasis PHP yang mengimplementasikan metode **Weight
 
 ---
 
-## 🛠️ Kustomisasi & Pengembangan
-
-* **Tambah kriteria/alternatif**: edit file di folder `page/`
-* **UI/UX**: sesuaikan file CSS/JS di folder `assets/`
-* **Keamanan**: tambahkan validasi input dan prepared statements untuk keamanan data
-
----
-
 ## 🔧 Teknologi Digunakan
 
-* PHP (>=7.x)
+* Java
 * MySQL
-* HTML, CSS, JavaScript
+* Jasper Reports
 
 ---
 
